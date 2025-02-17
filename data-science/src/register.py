@@ -13,6 +13,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, help="Name of the trained model")  # Path to the trained model artifact
     parser.add_argument("--model_path", type=str, help="Path to the trained model")
+    parser.add_argument("--model_info_output_path", type=str, help="Model output path")
     args = parser.parse_args()
 
     # Load the trained model from the provided path
