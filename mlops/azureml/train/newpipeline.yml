@@ -2,7 +2,7 @@ $schema: https://azuremlschemas.azureedge.net/latest/pipelineJob.schema.json
 type: pipeline
 display_name: complete_pipeline  # Provide the display name for the pipeline
 experiment_name: random_forest_regressor_full_code_ameleta_pipeline  # Provide the experiment name
-description: Train a Random Forest Regressor to predict data
+description: random_forest_regressor_full_code_ameleta_pipeline
 
 inputs:
   raw_data:
@@ -57,7 +57,7 @@ jobs:
         values: [10, 20, 30]
       max_depth:
         type: choice  # Specify the type for max_depth
-        values: [3, 5, null]  # Provide the values for max_depth
+        values: [3, 5, 10]  # Provide the values for max_depth
     objective:
       goal: minimize
       primary_metric: MSE
