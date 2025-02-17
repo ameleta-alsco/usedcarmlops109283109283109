@@ -1,4 +1,4 @@
-    $schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
+$schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
 type: command  # This is correct for trial definitions
 name: train_model
 display_name: train_model
