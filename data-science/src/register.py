@@ -11,11 +11,12 @@ mlflow.start_run()  # Starting the MLflow experiment run
 def main():
     # Argument parser setup for command line arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", type=str, help="Path to the trained model")  # Path to the trained model artifact
+    parser.add_argument("--model", type=str, help="Name of the trained model")  # Path to the trained model artifact
+    parser.add_argument("--model_path", type=str, help="Path to the trained model")
     args = parser.parse_args()
 
     # Load the trained model from the provided path
-    model = mlflow.sklearn.load_model(Path(args.model))
+    model = mlflow.sklearn.load_model(args.model_path)
 
     print("Registering the best trained machine failure prediction model")
     
