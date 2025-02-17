@@ -9,10 +9,10 @@ inputs:
     type: uri_folder  # Specify the type for test_data
   n_estimators:
     type: integer  # Specify the type for n_estimators
-    default: 100  # Provide the default value for n_estimators
+    default: 10  # Provide the default value for n_estimators
   max_depth:
     type: integer  # Specify the type for max_depth
-    default: 5  # Provide the default value for max_depth
+    default: 3  # Provide the default value for max_depth
 outputs:
   model_output:
     type: mlflow_model  # Specify the type for model_output
